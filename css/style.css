@@ -1,16 +1,16 @@
 :root {
     /* CSS HEX */
-    --coral-pink: #fe938cff;
+    --secondary: #fe938cff;
     --desert-sand: #e6b89cff;
-    --wheat: #ead2acff;
+    --text: #ead2acff;
     --cadet-gray: #9cafb7ff;
-    --cerulean: #4281a4ff;
+    --primary: #4281a4ff;
 }
 
 body {
     min-height: 100vh;
-    background: var(--cerulean);
-    color: var(--wheat);
+    background: var(--primary);
+    color: var(--text);
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@ body {
     padding: 2em;
 }
 nav {
-    background-color: var(--coral-pink);
+    background-color: var(--secondary);
     width: 100vw;
     height: 5em;
     margin: 0px;
@@ -95,7 +95,8 @@ nav a img {
     flex-direction: column;
     align-items: center;
     border-style: solid;
-    border-color: var(--wheat);
+    border-color: var(--text);
+    background: var(--secondary);
 }
 
 .amigos img {
@@ -113,7 +114,7 @@ nav a img {
 footer {
     display: flex;
     justify-content: center;
-    background: var(--coral-pink);
+    background: var(--secondary);
 }
 
 .contact-form {
