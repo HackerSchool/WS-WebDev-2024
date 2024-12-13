@@ -12,13 +12,13 @@ body {
     background: var(--primary);
     color: var(--text);
     margin: 0;
-    display: flex;
     flex-direction: column;
 }
 
 .content {
     padding: 2em;
 }
+
 nav {
     background-color: var(--secondary);
     width: 100vw;
@@ -45,9 +45,12 @@ img {
 }
 
 nav a {
-    display: inline-flex;  /* Ensure <a> behaves as a flex container */
-    align-items: center;   /* Center image vertically within the <a> */
-    height: 100%;           /* Ensure <a> takes the full height of the navbar */
+    display: inline-flex;
+    /* Ensure <a> behaves as a flex container */
+    align-items: center;
+    /* Center image vertically within the <a> */
+    height: 100%;
+    /* Ensure <a> takes the full height of the navbar */
     text-decoration-line: none;
     background: var(--cadet-gray);
     border-radius: 1em;
@@ -62,7 +65,6 @@ h2 {
 
 nav a:hover {
     background: var(--desert-sand);
-    
 }
 
 nav a img {
@@ -85,11 +87,13 @@ nav a img {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 1em; /* Optional: adds spacing between the child elements */
-    flex-wrap: wrap;  /* Allow wrapping if needed */
+    gap: 1em;
+    /* Optional: adds spacing between the child elements */
+    flex-wrap: wrap;
+    /* Allow wrapping if needed */
 }
 
-.amigos{
+.amigos {
     padding: 3em;
     display: flex;
     flex-direction: column;
@@ -102,7 +106,8 @@ nav a img {
 .amigos img {
     width: 10em;
     height: auto;
-    object-fit: cover;  /* Ensures the image covers the container without distortion */
+    object-fit: cover;
+    /* Ensures the image covers the container without distortion */
     aspect-ratio: 1;
     border-radius: 2em;
 }
@@ -123,10 +128,12 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px;  /* Maximum width of the form */
+    max-width: 500px;
+    /* Maximum width of the form */
     display: flex;
     flex-direction: column;
-    gap: 1em;  /* Spacing between form elements */
+    gap: 1em;
+    /* Spacing between form elements */
 }
 
 .contact-form label {
@@ -148,12 +155,13 @@ footer {
 
 .contact-form textarea {
     resize: vertical;
-    min-height: 120px;  /* Minimum height for the textarea */
+    min-height: 120px;
+    /* Minimum height for the textarea */
 }
 
 .contact-form button {
     padding: 0.8em 2em;
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     font-size: 1.1em;
     font-weight: bold;
@@ -164,16 +172,20 @@ footer {
 }
 
 .contact-form button:hover {
-    background-color: #45a049;  /* Darker green on hover */
+    background-color: #45a049;
+    /* Darker green on hover */
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #4CAF50;  /* Green border on focus */
-    outline: none;  /* Remove default outline */
+    border-color: #4caf50;
+    /* Green border on focus */
+    outline: none;
+    /* Remove default outline */
 }
 
 .contact-form button:disabled {
-    background-color: #ccc;  /* Disabled button state */
+    background-color: #ccc;
+    /* Disabled button state */
     cursor: not-allowed;
 }
